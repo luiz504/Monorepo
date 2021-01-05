@@ -4,7 +4,7 @@
     "lib": ["ESNext", "DOM"],
     "allowJs": false,
     "checkJs": false,
-    "jsx": "react-native"
+    "jsx": "react"
   },
   "include": [
     "./src/**/*"
