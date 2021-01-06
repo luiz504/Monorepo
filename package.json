@@ -4,8 +4,7 @@
   "main": "index.js",
   "private": "true",
   "scripts": {
-    "test": "jest",
-    "lint": "yarn lint-staged"
+    "test": "jest"
   },
   "workspaces": {
     "packages": [
@@ -13,23 +12,11 @@
       "packages/shared/*"
     ]
   },
-  
-  "hooks": {
-    "pre-commit": "yarn lint"
-  },
-  "lint-staged": {
-    "**/*.ts?(x)":[
-      "eslint --fix",
-      "prettier --write"
-    ]
-  },
-  "license": "MIT", 
+  "license": "MIT",
   "devDependencies": {
     "@monorepo/eslint-config": "*",
     "@types/jest": "^26.0.19",
-    "husky": "^4.3.6",
     "jest": "^26.6.3",
-    "lint-staged": "^10.5.3",
     "ts-jest": "^26.4.4",
     "typescript": "^4.1.3"
   }
